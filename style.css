@@ -3,7 +3,7 @@
 {
     --principal-color:#0065FC;
     --secondar-color:#DEEBFF;
-    --terciar-color:#DEEBFF;
+    --terciar-color:#F2F2F2;
 }
 
 /* Style de la page */
@@ -33,7 +33,6 @@ header a
     text-decoration: none;
     text-align: center;
     padding-top:25px;
-
 }
 
 header a:hover
@@ -52,15 +51,10 @@ header a:hover
     grid-column: 11;
 }
 
-
-
-
 #anchor-activity
 {
     grid-column: 12;
 }
-
-
 
 #inscription
 {
@@ -68,6 +62,67 @@ header a:hover
     grid-column:  13;
 }
 
+/* Espace de recherche */
+#search_zone
+{
+    display:flex;
+}
+
+#location-btn
+{
+    border-radius: 15px 0px 0px 15px;
+    border:none;
+    background-color: var(--terciar-color);
+    padding:10px;
+}
+
+#search-btn-pc
+{
+    border:none;
+    color:white;
+    background-color: var(--principal-color);
+    border-radius: 0px 15px 15px 0px;
+}
+
+#search-btn-mobile
+{
+    display:none;
+    border:none;
+    color:white;
+    background-color: var(--principal-color);
+    border-radius: 0px 15px 15px 0px;
+    padding:10px;
+}
+
+#searchTXT
+{
+    border-top:1px solid var(--terciar-color);
+    border-bottom:1px solid var(--terciar-color);
+    border-left:none;
+    border-right:none;
+}
+
+.filtres
+{
+    background-color: var(--terciar-color);
+    border:none;
+    border-radius: 45px;
+    margin:5px;
+}
+
+.filtres:hover
+{
+    border:1px solid black;
+    cursor:pointer;
+}
+
+.filtres .fas 
+{
+    padding:10px;
+    background-color: var(--secondar-color);
+    border-radius:100%;
+    margin:0px;
+}
 
 @media screen and (max-width:425px)
 {
@@ -102,5 +157,15 @@ header a:hover
     #inscription
     {
         border-bottom:none;
+    }
+
+    /* espace de recherche*/
+    #search-btn-pc
+    {
+        display: none;
+    }
+    #search-btn-mobile
+    {
+        display: block;
     }
 }
