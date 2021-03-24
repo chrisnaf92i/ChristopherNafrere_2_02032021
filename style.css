@@ -124,6 +124,91 @@ header a:hover
     margin:0px;
 }
 
+.fa-star 
+{
+    color: var(--terciar-color);
+}
+
+ .selected
+{
+    color: var(--principal-color) ;
+}
+
+/* Hébergement */
+#sec_hebergement
+{
+    display:flex;
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
+#liste_hebergement
+{
+    background-color: var(--terciar-color);
+    padding:15px;
+    border-radius:25px;
+}
+
+#all_hebergement
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 15px;
+}
+
+.hébergement
+{
+    margin:15px;
+    padding:5px;
+    border-radius:35px;
+    background-color: white;
+}
+
+.hébergement img
+{
+    width:300px ;
+    height:175px;
+    border-radius: 35px 35px 0px 0px;
+    margin:auto;
+}
+
+/* Hébergement Populaire */
+#aside-popular
+{
+    background-color: var(--terciar-color);
+    border-radius: 25px;
+    margin:15px;
+    padding:5px;
+}
+
+.popular_hebergement
+{
+    display:flex;
+    margin:15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.popular_hebergement img
+{
+    width:150px;
+    height:100px;
+    border-radius: 15px 0px 0px 15px;
+}
+.popular_hebergement h3
+{
+    margin:0px;
+}
+
+.des-pop
+{
+    margin-left:5px;
+}
+
 @media screen and (max-width:425px)
 {
     /* En tête */
@@ -148,10 +233,9 @@ header a:hover
     }
 
     header a:hover
-    {
-        
+    {        
         border-top: none;
-        border-bottom: 1px solid var(--principal-color);
+        border-bottom: 2px solid var(--principal-color);
         padding-bottom:10px;
     }
     #inscription
@@ -167,5 +251,32 @@ header a:hover
     #search-btn-mobile
     {
         display: block;
+    }
+
+    /* hébergement */
+    #sec_hebergement
+    {
+        flex-direction: column-reverse;
+    }
+
+    #liste_hebergement
+    {
+        background-color: white;
+    }
+
+    #all_hebergement
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .hébergement
+    {
+        box-shadow: 1px 1px 3px black;;
+    }
+
+    /* hébergement populaire */
+    .popular_hebergement
+    {
+        width: 325px;
     }
 }
