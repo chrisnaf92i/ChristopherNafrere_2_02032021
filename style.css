@@ -163,17 +163,16 @@ a
 .hébergement
 {
     margin:15px;
-    padding:5px;
     border-radius:35px;
     background-color: white;
+    width: 240px;;
 }
 
 .hébergement img
 {
-    width:300px ;
-    height:175px;
+    width:240px ;
+    height:150px;
     border-radius: 35px 35px 0px 0px;
-    margin:auto;
 }
 
 /* Hébergement Populaire */
@@ -191,12 +190,13 @@ a
     margin:15px;
     background-color: white;
     border-radius: 15px;
+
 }
 
 .popular_hebergement img
 {
-    width:150px;
-    height:100px;
+    width:180px;
+    height:205px;
     border-radius: 15px 0px 0px 15px;
 }
 .popular_hebergement h3
@@ -207,6 +207,51 @@ a
 .des-pop
 {
     margin-left:5px;
+}
+
+/* activité */
+#all_activity
+{
+    display:flex;
+    margin:25px;
+}
+
+.activity
+{
+    box-shadow: 3px 0.5px 6px black;
+    border-radius: 15px;
+    margin:10px;
+}
+
+.activity img
+{
+    width:315px;
+    height:450px;
+    border-radius: 15px 15px 0 0;
+}
+.double_activity
+{
+    height:300px;
+}
+.double_activity img
+{
+    height:200px;
+}
+
+.activity h3
+{
+    padding-left:15px;
+    margin:0px;
+    padding-bottom: 25px;
+}
+
+/* Pied de page */
+footer
+{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--terciar-color);
+    padding-left: 25px;
 }
 
 @media screen and (max-width:425px)
@@ -271,12 +316,34 @@ a
 
     .hébergement
     {
-        box-shadow: 1px 1px 3px black;;
+        box-shadow: 1px 1px 3px black;
+        width: 350px;
+    }
+    .hébergement img
+    {
+        width:350px;
+        height:225px;
     }
 
     /* hébergement populaire */
     .popular_hebergement
     {
         width: 325px;
+    }
+
+    /* Activité */
+    #all_activity
+    {
+        flex-direction: column;
+    }
+
+    .activity img
+    {
+        height:225px;
+    }
+    
+    footer
+    {
+        grid-template-columns: 1fr;
     }
 }
