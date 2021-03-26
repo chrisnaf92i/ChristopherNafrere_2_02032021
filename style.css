@@ -163,17 +163,16 @@ a
 .hébergement
 {
     margin:15px;
-    padding:5px;
     border-radius:35px;
     background-color: white;
+    width: 240px;
 }
 
 .hébergement img
 {
-    width:300px ;
-    height:175px;
+    width:240px ;
+    height:150px;
     border-radius: 35px 35px 0px 0px;
-    margin:auto;
 }
 
 /* Hébergement Populaire */
@@ -191,12 +190,13 @@ a
     margin:15px;
     background-color: white;
     border-radius: 15px;
+
 }
 
 .popular_hebergement img
 {
-    width:150px;
-    height:100px;
+    width:180px;
+    height:205px;
     border-radius: 15px 0px 0px 15px;
 }
 .popular_hebergement h3
@@ -209,6 +209,125 @@ a
     margin-left:5px;
 }
 
+/* activité */
+#all_activity
+{
+    display:flex;
+    margin:25px;
+}
+
+.activity
+{
+    box-shadow: 3px 0.5px 6px black;
+    border-radius: 15px;
+    margin:10px;
+}
+
+.activity img
+{
+    width:315px;
+    height:450px;
+    border-radius: 15px 15px 0 0;
+}
+.double_activity
+{
+    height:300px;
+}
+.double_activity img
+{
+    height:200px;
+}
+
+.activity h3
+{
+    padding-left:15px;
+    margin:0px;
+    padding-bottom: 25px;
+}
+
+footer
+{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--terciar-color);
+    padding-left: 25px;
+}
+
+/* Tablette */
+
+@media screen and (min-width:450px) and (max-width:768px)
+{
+    /* hébergement */
+    #sec_hebergement
+    {
+        flex-direction: column-reverse;
+    }
+    #aside-popular
+    {
+        background-color: white;
+        
+    }
+
+    #liste_hebergement
+    {
+        width:max-content;
+    }
+
+    /* Hébergement populaire */
+    #all_popular_hebergement
+    {
+        display:flex;
+    }
+
+    .popular_hebergement
+    {
+        box-shadow: 1px 1px 3px;
+        display:block;
+        border-radius:25px;
+        width:250px;
+        height: 300px;
+    }
+
+    .popular_hebergement img
+    {
+        border-radius: 25px 25px 0px 0px;
+        width:250px;
+        height:150px;
+    }
+
+    /* Activité */
+    #all_activity
+    {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activity
+    {
+        width:315px
+    }
+
+    #all_activity .act_1
+    {
+        grid-column: 1;
+    }
+    #all_activity .act_2
+    {
+        grid-column: 2;
+    }
+    #all_activity .act_4
+    {
+        grid-column: 1;
+    }
+    #all_activity .act_3
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+}
+
+/* téléphone */
 @media screen and (max-width:425px)
 {
     /* En tête */
@@ -271,12 +390,39 @@ a
 
     .hébergement
     {
-        box-shadow: 1px 1px 3px black;;
+        box-shadow: 1px 1px 3px black;
+        width: 350px;
+    }
+    .hébergement img
+    {
+        width:350px;
+        height:225px;
     }
 
     /* hébergement populaire */
     .popular_hebergement
     {
         width: 325px;
+    }
+
+    /* Activité */
+    #all_activity
+    {
+        flex-direction: column;
+    }
+
+    .activity img
+    {
+        width:333px;
+        height:225px;
+    }
+    .double_activity
+    {
+        height:580px;
+    }
+    
+    footer
+    {
+        grid-template-columns: 1fr;
     }
 }
