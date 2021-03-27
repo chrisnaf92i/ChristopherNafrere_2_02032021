@@ -165,11 +165,9 @@ a
     margin:15px;
     border-radius:35px;
     background-color: white;
-<<<<<<< HEAD
     width: 240px;
-=======
+
     width: 240px;;
->>>>>>> f1135f211b3817519575afe23ef32fd5babede86
 }
 
 .hébergement img
@@ -249,10 +247,9 @@ a
     padding-bottom: 25px;
 }
 
-<<<<<<< HEAD
-=======
+
 /* Pied de page */
->>>>>>> f1135f211b3817519575afe23ef32fd5babede86
+
 footer
 {
     display:grid;
@@ -261,9 +258,7 @@ footer
     padding-left: 25px;
 }
 
-<<<<<<< HEAD
 /* Tablette */
-
 @media screen and (min-width:450px) and (max-width:768px)
 {
     /* hébergement */
@@ -337,8 +332,7 @@ footer
 }
 
 /* téléphone */
-=======
->>>>>>> f1135f211b3817519575afe23ef32fd5babede86
+
 @media screen and (max-width:425px)
 {
     /* En tête */
@@ -424,7 +418,6 @@ footer
 
     .activity img
     {
-<<<<<<< HEAD
         width:333px;
         height:225px;
     }
@@ -432,10 +425,10 @@ footer
     {
         height:580px;
     }
-=======
+    .double_activity img
+    {
         height:225px;
     }
->>>>>>> f1135f211b3817519575afe23ef32fd5babede86
     
     footer
     {
