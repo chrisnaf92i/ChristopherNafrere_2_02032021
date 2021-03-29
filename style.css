@@ -165,15 +165,14 @@ a
     margin:15px;
     border-radius:35px;
     background-color: white;
-    width: 240px;
+    width: 340px;
 
-    width: 240px;;
 }
 
 .hébergement img
 {
-    width:240px ;
-    height:150px;
+    width: 340px ;
+    height:220px;
     border-radius: 35px 35px 0px 0px;
 }
 
@@ -197,8 +196,8 @@ a
 
 .popular_hebergement img
 {
-    width:180px;
-    height:205px;
+    width:250px;
+    height:250px;
     border-radius: 15px 0px 0px 15px;
 }
 .popular_hebergement h3
@@ -227,17 +226,17 @@ a
 
 .activity img
 {
-    width:315px;
-    height:450px;
+    width:400px;
+    height:600px;
     border-radius: 15px 15px 0 0;
 }
 .double_activity
 {
-    height:300px;
+    height:310px;
 }
 .double_activity img
 {
-    height:200px;
+    height:270px;
 }
 
 .activity h3
