@@ -284,6 +284,7 @@ footer
     .hébergement img
     {
         width:200px;
+        height:125px
     }
     /* Hébergement populaire */
     #all_popular_hebergement
@@ -324,6 +325,10 @@ footer
     .activity
     {
         width:315px
+    }
+    .activity img
+    {
+        width:315px;
     }
 
     #all_activity .act_1
