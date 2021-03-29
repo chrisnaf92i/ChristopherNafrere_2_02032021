@@ -261,41 +261,57 @@ footer
 /* Tablette */
 @media screen and (min-width:450px) and (max-width:768px)
 {
+    header a
+    {
+        padding:0px 15px;
+    }
     /* hébergement */
     #sec_hebergement
     {
         flex-direction: column-reverse;
     }
-    #aside-popular
-    {
-        background-color: white;
-        
-    }
+
 
     #liste_hebergement
     {
         width:max-content;
     }
 
+    .hébergement
+    {
+        width:200px;
+    }
+
+    .hébergement img
+    {
+        width:200px;
+    }
     /* Hébergement populaire */
     #all_popular_hebergement
     {
         display:flex;
     }
 
+    #aside-popular
+    {
+        background-color: white;
+        
+    }
+
+
     .popular_hebergement
     {
         box-shadow: 1px 1px 3px;
         display:block;
         border-radius:25px;
-        width:250px;
-        height: 300px;
+        width:200px;
+        height: 280px;
     }
 
     .popular_hebergement img
     {
         border-radius: 25px 25px 0px 0px;
-        width:250px;
+        width:200px;
         height:150px;
     }
 
