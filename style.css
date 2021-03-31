@@ -218,7 +218,12 @@ a
     border-radius: 25px;
     margin-left:20px;
 }
-
+#title_popular
+{
+    display:flex;
+    margin:25px;
+    justify-content: space-between;
+}
 .popular_hebergement
 {
     display:flex;
@@ -465,9 +470,10 @@ footer
     /* hébergement populaire */
     #aside-popular
     {
-        width: 315;
-        margin:auto;
+        width: 90%;
     }
+
+
 
     .popular_hebergement
     {
@@ -476,7 +482,7 @@ footer
     }
     .popular_hebergement img
     {
-        width:45%;
+        width:40%;
     }
 
     /* Activité */
