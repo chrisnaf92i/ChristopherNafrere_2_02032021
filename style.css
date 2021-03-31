@@ -490,7 +490,7 @@ footer
     /* Activité */
     #all_activity
     {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .activity
