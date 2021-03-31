@@ -363,7 +363,6 @@ footer
     /* Activité */
     #all_activity
     {
-        display:grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -491,6 +490,7 @@ footer
     #all_activity
     {
         grid-template-columns: 1fr;
+        margin-bottom: 45px;
     }
 
     .activity
