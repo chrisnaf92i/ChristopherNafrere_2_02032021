@@ -193,13 +193,13 @@ a
     margin:15px;
     border-radius:35px;
     background-color: white;
-    width: 300px;
+    width: 250px;
 
 }
 
 .hébergement img
 {
-    width: 300px ;
+    width: 250px ;
     height: 150px;
     border-radius: 35px 35px 0px 0px;
 }
@@ -223,7 +223,7 @@ a
 
 .popular_hebergement img
 {
-    width:250px;
+    width:170px;
     height:175px;
     border-radius: 15px 0px 0px 15px;
 }
@@ -253,7 +253,7 @@ a
 
 .activity img
 {
-    width:350px;
+    width:300px;
     height:600px;
     border-radius: 15px 15px 0 0;
 }
