@@ -109,6 +109,13 @@ header a:hover
     padding:10px;
 }
 
+#search-btn-mobile:hover
+{
+    cursor:pointer;
+    background-color:white;
+    color: var(--principal-color);
+    box-shadow: 1px 1px 2px black;
+}
 #searchTXT
 {
     border-top:1px solid var(--terciar-color);
@@ -297,6 +304,10 @@ footer
         flex-direction: column-reverse;
     }
 
+    .filtres:hover
+    {
+        border-color: black;
+    }
 
     #liste_hebergement
     {
@@ -443,18 +454,29 @@ footer
     .hébergement
     {
         box-shadow: 1px 1px 3px black;
-        width: 350px;
+        width: 95%;
     }
     .hébergement img
     {
-        width:350px;
+        width:100%;
         height:225px;
     }
 
     /* hébergement populaire */
+    #aside-popular
+    {
+        width: 315;
+        margin:auto;
+    }
+
     .popular_hebergement
     {
-        width: 333px;
+        width: 90%;
+        margin:15px auto;
+    }
+    .popular_hebergement img
+    {
+        width:45%;
     }
 
     /* Activité */
@@ -465,11 +487,13 @@ footer
 
     .activity
     {
-        width: 333px;
+        width: 90%;
+        margin: 15px auto;
+
     }
     .activity img
     {
-        width:333px;
+        width:100%;
         height:225px;
     }
     .double_activity
