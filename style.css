@@ -198,18 +198,66 @@ a
 .hébergement
 {
     margin:15px;
-    border-radius:35px;
+    border-radius:25px;
     background-color: white;
-    width: 250px;
+    width:300px;
+    height:255px;
 
 }
 
-.hébergement img
+.img
+{    
+    background-position: center;
+    background-size:cover;
+
+}
+
+.h1
 {
-    width: 250px ;
-    height: 150px;
-    border-radius: 35px 35px 0px 0px;
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
 }
+
+.h2
+{
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
+
+}
+.h3
+{
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
+}
+.h4
+{
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
+}
+.h5
+{
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
+}
+.h6
+{
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:50%;
+}
+
+
 
 /* Hébergement Populaire */
 #aside-popular
@@ -217,6 +265,7 @@ a
     background-color: var(--terciar-color);
     border-radius: 25px;
     margin-left:20px;
+    width:425px;
 }
 #title_popular
 {
@@ -230,14 +279,31 @@ a
     margin:15px;
     background-color: white;
     border-radius: 15px;
-
+    width:90%;
+    height:150px;
+    margin:15px auto;
 }
 
-.popular_hebergement img
+.p1
 {
-    width:170px;
-    height:175px;
-    border-radius: 15px 0px 0px 15px;
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    border-radius:15px  0 0 15px;
+    width:40%;
+    height:100%;
+}
+.p2
+{
+    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    border-radius:15px  0 0 15px;
+    width:40%;
+    height:100%;
+}
+.p3
+{
+    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    border-radius:15px  0 0 15px;
+    width:40%;
+    height:100%;
 }
 .popular_hebergement h3
 {
@@ -263,14 +329,64 @@ a
     border-radius: 15px;
     margin:10px;
     width:90%;
+    height:400px;
 }
 
-.activity img
+.double_activity .activity
 {
-    width:100%;
-    height:600px;
-    border-radius: 15px 15px 0 0;
+    height: 63%;
 }
+
+.a1
+{
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+.a2
+{
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+.a3
+{
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+.a4
+{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+.a5
+{
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+.a6
+{
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    border-radius:15px 15px 0px 0px;
+    width:100%;
+    height:80%;
+}
+
+
+
 .double_activity
 {
     height:310px;
@@ -286,6 +402,8 @@ a
     margin:0px;
     padding-bottom: 25px;
 }
+
+
 
 
 /* Pied de page */
@@ -323,14 +441,39 @@ footer
 
     .hébergement
     {
-        width:200px;
+        width:90%;
+        height: 230px;
+    }
+    
+    .h1
+    {
+        height: 55%;
+    }
+    .h2
+    {
+        height: 55%;
+    }
+    .h3
+    {
+        height: 55%;
+    }
+    .h4
+    {
+        height: 55%;
+    }
+    .h4
+    {
+        height: 55%;
+    }
+    .h5
+    {
+        height: 55%;
+    }
+    .h6
+    {
+        height: 55%;
     }
 
-    .hébergement img
-    {
-        width:200px;
-        height:125px
-    }
     /* Hébergement populaire */
     #all_popular_hebergement
     {
@@ -351,13 +494,26 @@ footer
         border-radius:25px;
         width:200px;
         height: 280px;
+        margin:15px;
     }
 
-    .popular_hebergement img
+    .p1
     {
+        width:100%;
+        height:55%;
         border-radius: 25px 25px 0px 0px;
-        width:200px;
-        height:150px;
+    }
+    .p2
+    {
+        width:100%;
+        height:55%;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .p3
+    {
+        width:100%;
+        height:55%;
+        border-radius: 25px 25px 0px 0px;
     }
 
     /* Activité */
@@ -368,7 +524,7 @@ footer
 
     .activity
     {
-        width:315px
+        width:315px;
     }
     .activity img
     {
@@ -462,11 +618,6 @@ footer
         box-shadow: 1px 1px 3px black;
         width: 95%;
     }
-    .hébergement img
-    {
-        width:100%;
-        height:225px;
-    }
 
     /* hébergement populaire */
     #aside-popular
@@ -491,26 +642,17 @@ footer
     {
         grid-template-columns: 1fr;
         margin-bottom: 45px;
+        height: 1550px;
     }
 
     .activity
     {
-        width: 90%;
-        margin: 15px auto;
+        height:80%;
+    }
 
-    }
-    .activity img
+    .double_activity .activity
     {
-        width:100%;
-        height:225px;
-    }
-    .double_activity
-    {
-        height:580px;
-    }
-    .double_activity img
-    {
-        height:225px;
+        height:80%;
     }
     
     footer
