@@ -618,6 +618,11 @@ footer
         box-shadow: 1px 1px 3px black;
         width: 95%;
     }
+    .hébergement img
+    {
+        width:100%;
+        height:225px;
+    }
 
     /* hébergement populaire */
     #aside-popular
@@ -642,17 +647,24 @@ footer
     {
         grid-template-columns: 1fr;
         margin-bottom: 45px;
-        height: 1550px;
     }
 
-    .activity
+    .double_activity
     {
-        height:80%;
+        height:625px;
     }
 
     .double_activity .activity
     {
-        height:80%;
+        height:300px;
+    }
+
+    .activity
+    {
+        width: 90%;
+        height:300px;
+        margin: 15px auto;
+
     }
     
     footer
