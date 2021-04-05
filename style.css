@@ -461,10 +461,6 @@ footer
     {
         height: 55%;
     }
-    .h4
-    {
-        height: 55%;
-    }
     .h5
     {
         height: 55%;
@@ -662,7 +658,6 @@ footer
     .activity
     {
         width: 90%;
-        height:300px;
         margin: 15px auto;
 
     }
