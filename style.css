@@ -22,12 +22,6 @@ header
     grid-template-columns: repeat(13, 1fr);
 }
 
-header img
-{
-    width:150px;
-    grid-column: 1;
-}
-
 header a
 {
     margin-top:5px;
@@ -96,7 +90,8 @@ header a:hover
     cursor:pointer;
     background-color:white;
     color: var(--principal-color);
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 0.5px 0.5px 6px grey;
+
 }
 
 #search-btn-mobile
@@ -114,7 +109,8 @@ header a:hover
     cursor:pointer;
     background-color:white;
     color: var(--principal-color);
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 0.5px 0.5px 6px grey;
+
 }
 #searchTXT
 {
@@ -201,8 +197,19 @@ a
     border-radius:25px;
     background-color: white;
     width:300px;
-    height:255px;
+    height:235px;
+    padding:5px;
+}
 
+
+.hébergement h3
+{
+    margin:5px
+}
+
+.hébergement p
+{
+    margin:5px;
 }
 
 .img
@@ -217,7 +224,7 @@ a
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 }
 
 .h2
@@ -225,7 +232,7 @@ a
     background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 
 }
 .h3
@@ -233,29 +240,30 @@ a
     background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 }
 .h4
 {
     background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 }
 .h5
 {
     background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 }
 .h6
 {
     background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     border-radius:25px 25px 0 0;
     width:100%;
-    height:50%;
+    height:65%;
 }
+
 
 
 
@@ -282,6 +290,7 @@ a
     width:90%;
     height:150px;
     margin:15px auto;
+    padding:5px;
 }
 
 .p1
@@ -325,7 +334,7 @@ a
 
 .activity
 {
-    box-shadow: 3px 0.5px 6px black;
+    box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
     margin:10px;
     width:90%;
@@ -391,10 +400,7 @@ a
 {
     height:310px;
 }
-.double_activity img
-{
-    height:270px;
-}
+
 
 .activity h3
 {
@@ -484,8 +490,9 @@ footer
 
 
     .popular_hebergement
-    {
-        box-shadow: 1px 1px 3px;
+    {    
+        box-shadow: 0.5px 0.5px 6px grey;
+
         display:block;
         border-radius:25px;
         width:200px;
@@ -522,11 +529,7 @@ footer
     {
         width:315px;
     }
-    .activity img
-    {
-        width:315px;
-    }
-
+ 
     #all_activity .act_1
     {
         grid-column: 1;
@@ -551,6 +554,7 @@ footer
 
 @media screen and (max-width:425px)
 {
+
     /* En tête */
     header
     {
@@ -597,6 +601,8 @@ footer
     #sec_hebergement
     {
         flex-direction: column-reverse;
+        width:100%;
+        margin:auto
     }
 
     #liste_hebergement
@@ -610,20 +616,20 @@ footer
     }
 
     .hébergement
-    {
-        box-shadow: 1px 1px 3px black;
+    {    
+        box-shadow: 0.5px 0.5px 6px grey;
+
         width: 95%;
     }
-    .hébergement img
-    {
-        width:100%;
-        height:225px;
-    }
-
+ 
     /* hébergement populaire */
+
+
     #aside-popular
     {
-        width: 90%;
+        width: 100%;
+        border-radius: 0;
+        margin-left:0px
     }
 
 
@@ -632,10 +638,6 @@ footer
     {
         width: 90%;
         margin:15px auto;
-    }
-    .popular_hebergement img
-    {
-        width:40%;
     }
 
     /* Activité */
@@ -647,7 +649,7 @@ footer
 
     .double_activity
     {
-        height:625px;
+        height:425px;
     }
 
     .double_activity .activity
@@ -657,11 +659,46 @@ footer
 
     .activity
     {
-        width: 90%;
+        width: 100%;
         margin: 15px auto;
-
+        height:200px;
     }
     
+    .double_activity .activity
+    {
+        height:200px;
+    }
+
+    .a1
+    {
+        height: 80%;
+    }
+
+    .a2
+    {
+        height: 80%;
+    }
+
+    .a3
+    {
+        height: 80%;
+    }
+
+    .a4
+    {
+        height: 80%;
+    }
+
+    .a5
+    {
+        height: 80%;
+    }
+
+    .a6
+    {
+        height: 80%;
+    }
+
     footer
     {
         grid-template-columns: 1fr;
