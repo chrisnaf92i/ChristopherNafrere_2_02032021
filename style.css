@@ -345,7 +345,6 @@ a
 {
     box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
-    margin:px;
     width:85%;
     height:500px;
 }
@@ -612,17 +611,21 @@ footer
     {
         flex-direction: column-reverse;
         width:100%;
-        margin:auto
     }
 
     #liste_hebergement
     {
         background-color: white;
+
+        
+        
     }
 
     #all_hebergement
     {
         grid-template-columns: 1fr;
+        
+        
     }
 
     .hébergement
