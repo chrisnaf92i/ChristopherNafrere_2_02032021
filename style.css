@@ -190,7 +190,7 @@ a
     background-color: var(--terciar-color);
     padding:15px;
     border-radius:25px;
-    width:70%;
+    width:60%;
 }
 
 #all_hebergement
@@ -338,20 +338,22 @@ a
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     margin:auto;
+    margin-bottom: 25px;
 }
 
 .activity
 {
     box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
-    margin:10px;
-    width:90%;
+    margin:px;
+    width:85%;
     height:500px;
 }
 
 .double_activity .activity
 {
-    height: 79%;
+    height: 76%;
+    margin-bottom:25px;
 }
 
 .a1
