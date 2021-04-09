@@ -176,8 +176,6 @@ main
 #sec_hebergement
 {
     display:flex;
-    margin:auto;
-    width:95%;
 }
 
 a
@@ -191,8 +189,7 @@ a
     background-color: var(--terciar-color);
     padding:15px;
     border-radius:25px;
-    width:60%;
-    margin:auto;
+    width: 80%; 
 }
 
 #all_hebergement
@@ -206,7 +203,7 @@ a
     margin:15px;
     border-radius:25px;
     background-color: white;
-    width:230;
+    width:90%;
     height:235px;
     border:5px solid white;
 }
@@ -338,8 +335,8 @@ a
 #list_activity
 {
     margin:auto;
-    width:96%;
 }
+
 #all_activity
 {
     display:grid;
@@ -351,7 +348,7 @@ a
 {
     box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
-    width:93%;
+    width:97%;
     height:500px;
     margin:auto;
 }
@@ -458,7 +455,6 @@ footer
 
     #liste_hebergement
     {
-        width:max-content;
     }
 
     .hébergement
