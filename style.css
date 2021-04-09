@@ -177,6 +177,7 @@ main
 {
     display:flex;
     margin:auto;
+    width:95%;
 }
 
 a
@@ -191,6 +192,7 @@ a
     padding:15px;
     border-radius:25px;
     width:60%;
+    margin:auto;
 }
 
 #all_hebergement
@@ -280,7 +282,7 @@ a
 {
     background-color: var(--terciar-color);
     border-radius: 25px;
-    margin-left:20px;
+    margin-left:15px;
     width:420px;
 }
 #title_popular
@@ -333,11 +335,15 @@ a
 }
 
 /* activité */
+#list_activity
+{
+    margin:auto;
+    width:96%;
+}
 #all_activity
 {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    margin:auto;
     margin-bottom: 25px;
 }
 
@@ -345,14 +351,15 @@ a
 {
     box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
-    width:85%;
+    width:93%;
     height:500px;
+    margin:auto;
 }
 
 .double_activity .activity
 {
     height: 76%;
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 
 .a1
