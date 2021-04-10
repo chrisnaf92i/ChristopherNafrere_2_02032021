@@ -355,7 +355,7 @@ a
 
 .double_activity .activity
 {
-    height: 76%;
+    height: 78%;
     margin-bottom:15px;
 }
 
@@ -438,6 +438,10 @@ footer
 /* Tablette */
 @media screen and (min-width:450px) and (max-width:1024px)
 {
+    body
+    {
+        width:90%;
+    }
     header a
     {
         padding:0px 15px;
@@ -446,15 +450,18 @@ footer
     #sec_hebergement
     {
         flex-direction: column-reverse;
+        width:100%;
+    }
+
+    #liste_hebergement
+    {
+        margin:auto;
+        width:100%;
     }
 
     .filtres:hover
     {
         border-color: black;
-    }
-
-    #liste_hebergement
-    {
     }
 
     .hébergement
@@ -489,17 +496,17 @@ footer
     }
 
     /* Hébergement populaire */
-    #all_popular_hebergement
-    {
-        display:flex;
-    }
-
     #aside-popular
     {
         background-color: white;
-        
+        margin:0px;
     }
 
+    #all_popular_hebergement
+    {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .popular_hebergement
     {    
@@ -507,7 +514,7 @@ footer
 
         display:block;
         border-radius:25px;
-        width:200px;
+        width:180px;
         height: 280px;
         margin:15px;
     }
@@ -532,14 +539,20 @@ footer
     }
 
     /* Activité */
+    #list_activity
+    {
+        margin:auto;
+    }
     #all_activity
     {
+        margin:auto;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .activity
     {
         width:315px;
+        margin-bottom: 25px;
     }
  
     #all_activity .act_1
