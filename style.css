@@ -209,6 +209,12 @@ a
     border:5px solid white;
 }
 
+.hébergement img
+{
+    border-radius:25px 25px 0 0;
+    width:100%;
+    height:65%;
+}
 
 .hébergement h3
 {
@@ -219,60 +225,6 @@ a
 {
     margin:5px;
 }
-
-.img
-{    
-    background-position: center;
-    background-size:cover;
-
-}
-
-.h1
-{
-    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-}
-
-.h2
-{
-    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-
-}
-.h3
-{
-    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-}
-.h4
-{
-    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-}
-.h5
-{
-    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-}
-.h6
-{
-    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    border-radius:25px 25px 0 0;
-    width:100%;
-    height:65%;
-}
-
-
 
 
 /* Hébergement Populaire */
