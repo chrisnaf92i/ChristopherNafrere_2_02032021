@@ -119,7 +119,11 @@ main
     box-shadow: 0.5px 0.5px 6px grey;
 
 }
-
+main img
+{
+    object-fit: center;
+    object-position: center;
+}
 .searchTXT
 {
     border-top:1px solid var(--terciar-color);
@@ -232,8 +236,8 @@ a
 {
     background-color: var(--terciar-color);
     border-radius: 25px;
-    margin-left:15px;
-    width:420px;
+    margin-left:35px;
+    width:45%
 }
 .title_popular
 {
@@ -241,6 +245,7 @@ a
     margin:25px;
     justify-content: space-between;
 }
+
 .popular_hebergement
 {
     display:flex;
@@ -253,27 +258,14 @@ a
     padding:5px;
 }
 
-.p1
+.popular_hebergement img
 {
-    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     border-radius:15px  0 0 15px;
-    width:100px;
+    width:125px;
     height:100%;
+
 }
-.p2
-{
-    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    border-radius:15px  0 0 15px;
-    width:100px;
-    height:100%;
-}
-.p3
-{
-    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    border-radius:15px  0 0 15px;
-    width:100px;
-    height:100%;
-}
+
 .popular_hebergement h3
 {
     margin:0px;
@@ -283,6 +275,8 @@ a
 {
     margin-left:5px;
 }
+
+
 
 /* activité */
 #list_activity
