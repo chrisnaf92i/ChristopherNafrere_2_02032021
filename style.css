@@ -59,6 +59,8 @@ header a:hover
     grid-column:  13;
 }
 
+
+
 main
 {
     width:95%;
@@ -121,8 +123,10 @@ main
 }
 main img
 {
-    object-fit: center;
+    object-fit: cover;
+    -o-object-fit: cover;
     object-position: center;
+    -o-object-position: center;
 }
 .searchTXT
 {
@@ -141,7 +145,7 @@ main img
     border: 1.5px solid var(--terciar-color);
     padding:0px;
     padding-right:5px;
-    font-weight: bold;
+    font-weight:750;
 }
 
 .filtres:hover
@@ -296,13 +300,13 @@ a
     box-shadow: 0.5px 0.5px 6px grey;
     border-radius: 15px;
     width:90%;
-    height:500px;
     margin:auto;
+    height:500px;
 }
 
 .double_activity .activity
 {
-    height: 79%;
+    height: 87%;
     margin-bottom:15px;
 }
 
@@ -321,19 +325,17 @@ a
 
 .double_activity
 {
-    height:310px;
+    height:280px;
 }
+
 
 
 .activity h3
 {
-    padding-left:15px;
     margin:0px;
-    padding-bottom: 25px;
+    margin-left: 15px;
+    margin-left: 15px;
 }
-
-
-
 
 /* Pied de page */
 
@@ -343,6 +345,11 @@ footer
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--terciar-color);
     padding-left: 25px;
+}
+
+.info
+{
+    line-height: 2;
 }
 
 /* Tablette */
@@ -376,15 +383,17 @@ footer
 
     .hébergement
     {
-        width:90%;
+        width:92%;
         height: 230px;
     }
-    
+    .hébergement h3 
+    {
+        font-size: 17px;
+    }
     /* Hébergement populaire */
     .aside-popular
     {
         background-color: white;
-        margin:0px;
     }
 
     .all_popular_hebergement
@@ -427,9 +436,7 @@ footer
         width:95%;
         margin-bottom: 25px;
     }
- 
- 
-
+    
     .all_activity .act_1
     {
         grid-column: 1;
@@ -454,6 +461,11 @@ footer
 
 @media screen and (max-width:425px)
 {
+    body
+    {
+        width:100%;
+        margin:auto;
+    }
 
     /* En tête */
     header
@@ -487,6 +499,7 @@ footer
         border-bottom:none;
     }
 
+
     /* espace de recherche*/
     .search-btn-pc
     {
@@ -498,7 +511,7 @@ footer
     }
 
     /* hébergement */
-    .sec_hebergement
+    #sec_hebergement
     {
         flex-direction: column-reverse;
         width:100%;
@@ -506,16 +519,16 @@ footer
 
     .liste_hebergement
     {
+        padding:0px;
         background-color: white;
-
-        
-        
+        width:100%;
     }
 
     .all_hebergement
     {
         grid-template-columns: 1fr;
         
+        margin:auto;
         
     }
 
@@ -523,7 +536,14 @@ footer
     {    
         box-shadow: 0.5px 0.5px 6px grey;
 
-        width: 95%;
+        width: 90%;
+        height:180px;
+        margin:auto;
+    }
+    
+    .hébergement img
+    {
+        height:60%;
     }
  
     /* hébergement populaire */
@@ -542,35 +562,50 @@ footer
     {
         width: 90%;
         margin:15px auto;
+        height:125px;
+    }
+    .popular_hebergement img
+    {
+        width:100px;
+        height:100%
     }
 
     /* Activité */
-    #all_activity
+    .all_activity
     {
+        margin:auto;
         grid-template-columns: 1fr;
-        margin-bottom: 45px;
     }
 
     .double_activity
     {
-        height:425px;
+        height:350px;
     }
 
-    .double_activity .activity
+    .double_activity .activity 
     {
-        height:300px;
+        height:150px;
     }
 
     .activity
     {
-        width: 100%;
+        width: 95%;
         margin: 15px auto;
-        height:200px;
+        height:150px;
+       
+    }
+    .activity h3
+    {
+        font-size: 16px;
+    }
+    .activity img
+    {
+        height: 80%;
     }
     
-    .double_activity .activity
+    .double_activity img
     {
-        height:200px;
+        height: 83%;
     }
     
     footer
