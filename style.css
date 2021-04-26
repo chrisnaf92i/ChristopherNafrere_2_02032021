@@ -394,10 +394,12 @@ footer
     .aside-popular
     {
         background-color: white;
+        margin:0;
     }
 
     .all_popular_hebergement
     {
+        margin-left:0px;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -408,9 +410,9 @@ footer
 
         display:block;
         border-radius:25px;
-        width: 150px;
+        width: 200px;
         height: 280px;
-        margin:15px;
+        margin:5px;
     }
 
     .popular_hebergement img
