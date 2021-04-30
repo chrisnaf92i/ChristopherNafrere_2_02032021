@@ -19,8 +19,11 @@ body
 /* En tête */
 header
 {
+    position: relative;
     display:grid;
     grid-template-columns: repeat(13, 1fr);
+    width: 95%;
+    margin:auto;
 }
 
 header a
@@ -59,7 +62,10 @@ header a:hover
     grid-column:  13;
 }
 
-
+h1
+{
+    font-size: 24px;
+}
 
 main
 {
@@ -73,9 +79,10 @@ main
     display:flex;
 }
 
+
 .location-btn
 {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 10px 0px 0px 10px;
     border:none;
     background-color: var(--terciar-color);
     padding:10px;
@@ -109,7 +116,7 @@ main
     border:none;
     color:white;
     background-color: var(--principal-color);
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 10px;
     padding:10px;
 }
 
@@ -134,9 +141,14 @@ main img
     border-bottom:1px solid var(--terciar-color);
     border-left:none;
     border-right:none;
+ 
 }
 
-
+.p_filtres
+{
+    display:flex;
+    align-items: center;
+}
 .filtres
 {
     background-color:  white;
@@ -221,7 +233,6 @@ a
     background-color: white;
     width:90%;
     height:235px;
-    border:3px solid white;
 }
 
 .hébergement img
@@ -253,27 +264,41 @@ a
 .title_popular
 {
     display:flex;
-    margin:25px;
-    justify-content: space-between;
+ 
+    position:relative;
+    width:90%;
+    margin:auto;
+}
+
+.title_popular .fas
+{
+    position:absolute;
+    top: 30px;
+    right:10px;
+    font-size: 18px;
+}
+
+.popular_hebergement, .hébergement
+{
+    border:3px solid white;
 }
 
 .popular_hebergement
 {
     display:flex;
-    border:3px solid white;
     background-color: white;
     border-radius: 15px;
     width:80%;
     height:150px;
     margin:15px auto;
-    padding:5px;
 }
 
 .popular_hebergement img
 {
     border-radius:15px  0 0 15px;
-    width:125px;
+    width: 150px;
     height:100%;
+    margin-right:20px;
 
 }
 
@@ -304,17 +329,11 @@ a
 
 .activity
 {
-    box-shadow: 0.5px 0.5px 6px grey;
+    box-shadow: 0.1px 0px 8px rgba(128, 128, 128, 0.426);
     border-radius: 15px;
     width:90%;
     margin:auto;
     height:500px;
-}
-
-.double_activity .activity
-{
-    height: 87%;
-    margin-bottom:15px;
 }
 
 .activity img
@@ -330,17 +349,27 @@ a
     height:85%;
 }
 
-.double_activity
+
+.double_activity .activity 
 {
-    height:280px;
+    height:237px;
+    margin-top:26px;
+
+    margin-bottom:25px;
 }
 
-
+#big
+{
+    height:290px;
+} 
+#small
+{
+    height:180px;
+}
 
 .activity h3
 {
     margin:0px;
-    margin-left: 15px;
     margin-left: 15px;
 }
 
@@ -426,7 +455,7 @@ footer
     {
         border-radius: 15px 15px 0 0;
         width:100%;
-        height:50%
+        height:50%;
     }
 
     /* Activité */
@@ -481,8 +510,18 @@ footer
     {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    header img
+    {
+        position: absolute;
+        left:15px;
+        top:13px;
+    }
+
     .inscription
     {
+        position:absolute;
+        right:10px;
         grid-column: 2;
         grid-row: 1;
     }
@@ -490,11 +529,18 @@ footer
     {
         grid-column: 1;
         grid-row: 2;
+        margin-top:50px;
     }
     .anchor-activity
     {
+        margin-top:50px;
         grid-column: 2;
         grid-row: 2;
+    }
+
+    header a
+    {
+        border-bottom: 2px solid var(--terciar-color);
     }
 
     header a:hover
@@ -503,6 +549,8 @@ footer
         border-bottom: 2px solid var(--principal-color);
         padding-bottom:10px;
     }
+
+
     .inscription
     {
         border-bottom:none;
@@ -510,6 +558,15 @@ footer
 
 
     /* espace de recherche*/
+    .searchTXT
+    {
+        width:70%;
+        font-weight: bold;
+        padding:10px;
+        font-size: 18px;
+    }
+
+
     .search-btn-pc
     {
         display: none;
@@ -517,6 +574,13 @@ footer
     .search-btn-mobile
     {
         display: block;
+        width:50px
+    }
+
+    .p_filtres
+    {
+        flex-direction: column;
+        align-items: baseline;
     }
 
     /* hébergement */
@@ -546,7 +610,7 @@ footer
         box-shadow: 0.5px 0.5px 6px grey;
 
         width: 90%;
-        height:180px;
+        height:205px;
         margin:auto;
         margin-bottom:15px;
     }
@@ -574,8 +638,8 @@ footer
     }
     .popular_hebergement img
     {
-        width:100px;
-        height:100%
+        width:120px;
+        height:100%;
     }
 
     /* Activité */
@@ -583,6 +647,7 @@ footer
     {
         margin:auto;
         grid-template-columns: 1fr;
+        margin-bottom:45px;
     }
 
     .double_activity
@@ -598,6 +663,17 @@ footer
         height:200px;
        
     }
+
+    #big
+    {
+        height:200px;
+    }
+
+    #small
+    {
+        height:200px;
+    }
+
     .activity h3
     {
         font-size: 16px;
